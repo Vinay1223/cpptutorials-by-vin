@@ -20,6 +20,7 @@ int main(){
     cout<<"We are inside our main function"<<endl;
     cout<<"Creating first object n1"<<endl;
     num n1;
+    //now we will create a block of code 
     {
         cout<<"Entering this block"<<endl;
         cout<<"Creating two more objects"<<endl;

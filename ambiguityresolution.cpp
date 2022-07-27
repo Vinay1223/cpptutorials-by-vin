@@ -17,7 +17,10 @@ class Base2{
 class Derived : public Base1,public Base2{
     int a;
     public:
-        void greet(){
+    
+        void greet() // if this function is commented then the program will show a error as ambiguity because the compiler will get confused that which do i need to 
+            //consider for execution because there is a ambiguity
+        {
             //Base2 :: great();
             Base1:: greet();
         }

@@ -16,6 +16,15 @@ public:
     int sumCompComplex(Complex, Complex);
 };
 
+int Calculator::sumRealComplex(Complex o1, Complex o2)
+{
+    return (o1.a + o2.a);
+}
+
+int Calculator ::sumCompComplex(Complex o1, Complex o2)
+{
+    return (o1.b + o2.b);
+}
 
 class Complex
 {
@@ -40,15 +49,7 @@ public:
     }
 };
 
-int Calculator::sumRealComplex(Complex o1, Complex o2)
-{
-    return (o1.a + o2.a);
-}
 
-int Calculator ::sumCompComplex(Complex o1, Complex o2)
-{
-    return (o1.b + o2.b);
-}
 int main()
 {
     Complex o1, o2;

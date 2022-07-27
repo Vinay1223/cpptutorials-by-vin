@@ -8,13 +8,15 @@
 //      - No methods
 // classes --> structures + more
 // classes --> can have methods and properties
-// classes --> can make few members as private & few as public
-// structures in C++ are typedefed
+// classes --> can make few members as private,protected & few as public
+// structures in C++ are typedef
 // you can declare objects along with the class declarion like this:
 /* class Employee{
             // Class definition
+            int salary;
         } harry, rohan, lovish; */
 // harry.salary = 8 makes no sense if salary is private
+//because we didn't specify that the accessing data element is publically declared.
 
 // Nesting of member functions
 
@@ -54,7 +56,7 @@ void binary::chk_bin(void)
 
 void binary::ones_compliment(void)
 {
-    chk_bin();
+    chk_bin();   //here the member function is called since we need to check whether the given input is a valid Binary number or not.
     for (int i = 0; i < s.length(); i++)
     {
         if (s.at(i) == '0')
